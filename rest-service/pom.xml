@@ -21,6 +21,22 @@
         <relativePath>../pom.xml</relativePath> <!-- Caminho relativo para o pom.xml pai -->
     </parent>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.company.CalculatorApplication</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <dependencies>
         <!-- Spring Boot -->
         <dependency>
@@ -36,5 +52,5 @@
         </dependency>
 
     </dependencies>
-    
+
 </project>
